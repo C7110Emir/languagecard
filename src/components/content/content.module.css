@@ -1,0 +1,33 @@
+
+.innerdiv {
+    border:1px solid black;
+    width:25rem;
+    height:40rem;
+    margin:0 auto;
+    background-color:red;
+    border-radius:20px;
+    text-align:center;
+}
+.clip{
+
+    height:40rem;
+    width:25rem;
+    background-color:lightblue;
+    animation: mymove 5s infinite;
+    clip-path: circle(100%);
+    border-radius: 20px;
+}
+
+@keyframes mymove{
+    100% {clip-path: circle(20%)}
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+}
+
+h1{
+    margin-left: 7rem;
+    font-style: italic
+}
