@@ -1,9 +1,9 @@
 import React from 'react'
-import style from "./content.module.css"
+
 import data from "../data"
 import {useState} from "react"
 function Content(props) {
-    const [display,setdisplay] = useState(false)
+    const [display,setDisplay] = useState(false)
     const handleClick = () => {
         setDisplay(!display);
       };
@@ -11,9 +11,7 @@ function Content(props) {
     return (
         <>
           <div
-            className={display ? 'display' : null}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleHoverRes}
+            className={`langs ${display ? 'display' : null}`}
             onClick={handleClick}
           >
             {!display ? (
@@ -36,5 +34,5 @@ function Content(props) {
     }
     
    
-} 
+ 
 export default Content;
